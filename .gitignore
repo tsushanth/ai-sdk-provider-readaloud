@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+*.log
+*.tgz
+.env
+.env.*
+*.key
+*.mp3
+*.wav
+*.opus
+*.pcm
+.DS_Store

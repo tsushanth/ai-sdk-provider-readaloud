@@ -1,0 +1,55 @@
+{
+  "name": "ai-sdk-provider-readaloud",
+  "version": "0.1.0",
+  "description": "ReadAloud text-to-speech provider for the Vercel AI SDK (generateSpeech)",
+  "keywords": ["ai", "ai-sdk", "vercel", "provider", "readaloud", "tts", "text-to-speech", "speech", "voice-agents"],
+  "license": "MIT",
+  "author": "Sushanth Tiruvaipati",
+  "homepage": "https://github.com/tsushanth/ai-sdk-provider-readaloud#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsushanth/ai-sdk-provider-readaloud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tsushanth/ai-sdk-provider-readaloud/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "CHANGELOG.md", "LICENSE"],
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:live": "vitest run test/live.test.ts",
+    "example": "tsx examples/generate-speech.ts",
+    "prepublishOnly": "npm run typecheck && npm run build && npm test"
+  },
+  "dependencies": {
+    "@ai-sdk/provider": "^4.0.26"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "ai": "^7.0.137",
+    "tsdown": "^0.23.0",
+    "tsx": "^4.20.0",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.3"
+  }
+}
