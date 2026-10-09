@@ -2,9 +2,23 @@
   "name": "ai-sdk-provider-readaloud",
   "version": "0.1.0",
   "description": "ReadAloud text-to-speech provider for the Vercel AI SDK (generateSpeech)",
-  "keywords": ["ai", "ai-sdk", "vercel", "provider", "readaloud", "tts", "text-to-speech", "speech", "voice-agents"],
+  "keywords": [
+    "ai",
+    "ai-sdk",
+    "vercel",
+    "provider",
+    "readaloud",
+    "tts",
+    "text-to-speech",
+    "speech",
+    "voice-agents"
+  ],
   "license": "MIT",
-  "author": "Sushanth Tiruvaipati",
+  "author": {
+    "name": "Sushanth Tiruvaipati",
+    "email": "78000697+tsushanth@users.noreply.github.com",
+    "url": "https://github.com/tsushanth"
+  },
   "homepage": "https://github.com/tsushanth/ai-sdk-provider-readaloud#readme",
   "repository": {
     "type": "git",
@@ -25,7 +39,12 @@
       "default": "./dist/index.js"
     }
   },
-  "files": ["dist", "README.md", "CHANGELOG.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "engines": {
     "node": ">=22"
   },
