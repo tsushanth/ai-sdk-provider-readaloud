@@ -1,6 +1,6 @@
 {
   "name": "ai-sdk-provider-readaloud",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ReadAloud text-to-speech provider for the Vercel AI SDK (generateSpeech)",
   "keywords": [
     "ai",

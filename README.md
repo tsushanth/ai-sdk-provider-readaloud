@@ -7,10 +7,6 @@ with `generateSpeech()` from the `ai` package.
 - One runtime dependency: `@ai-sdk/provider`. ESM only, TypeScript types included.
 - Returns audio bytes with the right media type, warnings for unsupported options, and request/response metadata.
 
-> Status: **0.1.0, not yet published to npm.** Until it is, clone and build:
-> `git clone https://github.com/tsushanth/ai-sdk-provider-readaloud && cd ai-sdk-provider-readaloud && npm ci && npm run build`,
-> then depend on the folder (`npm install /path/to/ai-sdk-provider-readaloud`).
-
 ## Install
 
 ```bash
