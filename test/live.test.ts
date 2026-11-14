@@ -10,8 +10,8 @@ live('live: ReadAloud gateway', () => {
   const provider = createReadAloud({ apiKey, baseURL: process.env.READALOUD_BASE_URL });
   const text = 'Hello from the AI SDK.';
 
-  it('generates mp3 with piper-default', async () => {
-    const res = await generateSpeech({ model: provider.speech('default'), text, voice: 'piper-default' });
+  it('generates mp3 with readaloud-default', async () => {
+    const res = await generateSpeech({ model: provider.speech('default'), text, voice: 'readaloud-default' });
     expect(res.audio.mediaType).toBe('audio/mpeg');
     expect(res.audio.uint8Array.byteLength).toBeGreaterThan(5_000);
     expect(res.warnings).toEqual([]);

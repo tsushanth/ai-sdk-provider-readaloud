@@ -29,7 +29,7 @@ import { readaloud } from 'ai-sdk-provider-readaloud';
 const { audio, warnings } = await generateSpeech({
   model: readaloud.speech(),
   text: 'Hello from ReadAloud.',
-  voice: 'piper-default',
+  voice: 'readaloud-default',
   outputFormat: 'mp3',   // mp3 | opus | wav | pcm
   speed: 1.0,            // 0.25 - 4
 });
@@ -68,7 +68,7 @@ The model id does not select a voice (use the `voice` option), so `'default'` is
 | `generateSpeech` option | Behaviour                                                                                         |
 | ----------------------- | ------------------------------------------------------------------------------------------------- |
 | `text`                  | Required, up to 5000 characters (longer input is rejected by the API with a 400).                  |
-| `voice`                 | `piper-default` (default). OpenAI stock voice names such as `alloy` are accepted and map to the same default voice. |
+| `voice`                 | `readaloud-default` (default). OpenAI stock voice names such as `alloy` are accepted and map to the same default voice. |
 | `outputFormat`          | `mp3` (default), `opus` (Ogg), `wav`, `pcm` (24 kHz, 16-bit mono). Anything else (for example `aac`, `flac`) produces a warning and falls back to `mp3`. |
 | `speed`                 | 0.25 to 4. Values outside the range are clamped, with a warning.                                   |
 | `instructions`          | Not supported. Ignored with a warning.                                                            |

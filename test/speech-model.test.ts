@@ -67,7 +67,7 @@ describe('request shape', () => {
     expect(body(calls[0]!)).toEqual({
       model: 'default',
       input: 'Hi',
-      voice: 'piper-default',
+      voice: 'readaloud-default',
       response_format: 'mp3',
     });
   });
@@ -189,7 +189,7 @@ describe('warnings', () => {
     const { fn, calls } = mockFetch();
     const r = await createReadAloud({ apiKey: 'k', fetch: fn })
       .speech()
-      .doGenerate({ text: 'Hi', instructions: 'whisper', language: 'es' });
+      .doGenerate({ text: 'Hi', instructions: 'softly', language: 'es' });
     expect(r.warnings.map(w => (w.type === 'unsupported' ? w.feature : w.type))).toEqual([
       'instructions',
       'language',

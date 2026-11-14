@@ -4,6 +4,11 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [0.1.2] - 2026-11-14
+
+### Changed
+- The default voice id is now `readaloud-default` (README, examples and tests too). The earlier default voice id keeps working on the API.
+
 ## [0.1.1] - 2026-10-09
 
 ### Changed
