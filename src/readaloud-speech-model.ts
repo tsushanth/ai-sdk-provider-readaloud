@@ -151,7 +151,7 @@ export class ReadAloudSpeechModel implements SpeechModelV4 {
     const body: Record<string, unknown> = {
       model: this.modelId,
       input: text,
-      voice: voice ?? 'piper-default',
+      voice: voice ?? 'readaloud-default',
       response_format: responseFormat,
     };
     if (effectiveSpeed != null) body.speed = effectiveSpeed;

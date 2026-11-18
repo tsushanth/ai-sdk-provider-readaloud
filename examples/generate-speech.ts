@@ -8,7 +8,7 @@ const out = process.argv[2] ?? 'speech.mp3';
 const result = await generateSpeech({
   model: readaloud.speech(),
   text: 'Hello from ReadAloud, called through the Vercel AI SDK.',
-  voice: 'piper-default',
+  voice: 'readaloud-default',
   outputFormat: 'mp3',
 });
 
